@@ -1,0 +1,80 @@
+[
+  {
+    "id": "nova-crm",
+    "title": "Nova CRM",
+    "description": "Plot complex, sparse datasets on date time, logarithmic or even entirely custom scales with ease.",
+    "techStack": ["Nextjs", "React.js", "Chart.Js", "Shadcn"],
+    "features": [
+      "Plot complex, sparse datasets on date time, logarithmic or even entirely custom scales with ease.",
+      "Zoom, pan and even drag points around with just a few lines of code.",
+      "Choose from a variety of chart types including line, bar, radar, polar area"
+    ],
+    "images": [
+      {
+        "src": "/project/novacrm/n1.webp",
+        "alt": "Nova CRM Project Screenshot 1"
+      },
+      {
+        "src": "/project/novacrm/n2.webp",
+        "alt": "Nova CRM Project Screenshot 2"
+      },
+      {
+        "src": "/project/novacrm/n3.webp",
+        "alt": "Nova CRM Project Screenshot 3"
+      }
+    ],
+    "visitUrl": "https://novaxcrm.vercel.app/"
+  },
+  {
+    "id": "portfolio-website",
+    "title": "Portfolio Website",
+    "description": "A modern, responsive portfolio website built with Next.js 15 and Tailwind CSS.",
+    "techStack": ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui"],
+    "features": [
+      "Responsive design that works on all devices",
+      "Modern dark theme with smooth animations",
+      "Project showcase with interactive galleries"
+    ],
+    "images": [
+      {
+        "src": "/project/coinx/c1.webp",
+        "alt": "Portfolio Website Screenshot 1"
+      },
+      {
+        "src": "/project/coinx/c2.webp",
+        "alt": "Portfolio Website Screenshot 2"
+      },
+      {
+        "src": "/project/coinx/c3.webp",
+        "alt": "Portfolio Website Screenshot 3"
+      }
+    ],
+    "visitUrl": "https://coin-x1.vercel.app/"
+  },
+  {
+    "id": "example-project",
+    "title": "Example Project",
+    "description": "Another example project to demonstrate the component system.",
+    "techStack": ["React", "Node.js", "MongoDB", "Express"],
+    "features": [
+      "Full-stack application with REST API",
+      "Database integration with MongoDB",
+      "User authentication and authorization"
+    ],
+    "images": [
+      {
+        "src": "/project/ironflex/e1.webp",
+        "alt": "Example Project Screenshot 1"
+      },
+      {
+        "src": "/project/ironflex/e2.webp",
+        "alt": "Example Project Screenshot 2"
+      },
+      {
+        "src": "/project/ironflex/e3.webp",
+        "alt": "Example Project Screenshot 3"
+      }
+    ],
+    "visitUrl": "https://novaxcrm.vercel.app/"
+  }
+]
