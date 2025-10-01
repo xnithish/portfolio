@@ -44,7 +44,7 @@ export function ProjectCard({ project }: { project: Project }) {
 
           {/* Image container */}
           <div
-            className="relative w-full h-full max-w-7xl max-h-[80vh] md:max-h-[90vh]"
+            className="relative w-full h-full max-w-7xl max-h-[70vh] md:max-h-[85vh]"
             onClick={(e) => e.stopPropagation()}
           >
             <Image
@@ -57,10 +57,10 @@ export function ProjectCard({ project }: { project: Project }) {
             />
           </div>
 
-          {/* Click away instruction */}
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
-            <p className="text-white/60 text-xs md:text-sm bg-black/50 px-3 py-1 rounded-full">
-              Click anywhere to close
+          {/* Click away instruction - outside image container */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+            <p className="text-white/60 text-xs md:text-sm bg-black/50 px-4 py-2 rounded-full backdrop-blur-sm">
+              Click anywhere outside image to close
             </p>
           </div>
         </div>
