@@ -44,10 +44,10 @@ export function MobileHeader() {
         </div>
 
         <div className="space-y-2">
-          <h1 className="text-xl font-bold leading-tight text-white">
+          <h1 className="text-2xl font-bold leading-tight text-white">
             Hi I am Nithish Gowda 👋
           </h1>
-          <p className="text-xs text-gray-400 leading-snug">
+          <p className="text-sm text-gray-400 leading-snug">
             Frontend developer focused on crafting smooth, engaging interfaces. Currently exploring backend to become a more versatile developer.
           </p>
         </div>
@@ -151,19 +151,19 @@ export function MobileHeader() {
         <span className="text-sm font-bold text-muted-foreground">LINKS:</span>
         <div className="flex space-x-2">
           <SocialLink
-            href="https://github.com/xnithish"
+            href="https://github.com/0xnithish"
             icon="/brand_logos_mono/github.svg"
             alt="GitHub"
             label="github"
           />
           <SocialLink
-            href="https://www.linkedin.com/in/xnithish/"
+            href="https://www.linkedin.com/in/0xnithish/"
             icon="/brand_logos_mono/linkedin.svg"
             alt="LinkedIn"
             label="linkedin"
           />
           <SocialLink
-            href="https://x.com/xniithish"
+            href="https://x.com/0xnithish"
             icon="/brand_logos_mono/x.svg"
             alt="X (Twitter)"
             label="x"

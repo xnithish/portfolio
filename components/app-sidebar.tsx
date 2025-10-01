@@ -36,7 +36,7 @@ function SocialLink({ href, icon, alt, label }: SocialLinkProps) {
 
 export function AppSidebar() {
   return (
-    <Sidebar className="border-r border-r-gray-800 [&_[data-sidebar=sidebar]]:bg-[#080808] [&_[data-slot=sidebar-inner]]:bg-[#080808]">
+    <Sidebar className="border-r border-r-gray-800 [&_[data-sidebar=sidebar]]:bg-[#080808] [&_[data-slot=sidebar-inner]]:bg-[#080808] p-3">
       <SidebarContent className="px-6 bg-[#080808] justify-between flex flex-col h-full pb-12">
         <div className="space-y-4">
           <div className="flex items-center gap-3 pt-6">
@@ -155,13 +155,13 @@ export function AppSidebar() {
           </div>
           <div className="flex space-x-2">
             <SocialLink
-              href="https://github.com/xnithish"
+              href="https://github.com/0xnithish"
               icon="/brand_logos_mono/github.svg"
               alt="GitHub"
               label="github"
             />
             <SocialLink
-              href="https://www.linkedin.com/in/xnithish/"
+              href="https://www.linkedin.com/in/0xnithish/"
               icon="/brand_logos_mono/linkedin.svg"
               alt="LinkedIn"
               label="linkedin"
@@ -182,39 +182,8 @@ export function AppSidebar() {
           </div>
         </div>
       </SidebarContent>
-      <SidebarFooter className="px-6 py-2 bg-[#080808]">
-        {/* <div className="mt-2 flex items-center space-x-4">
-          <div className="flex flex-col leading-none">
-            <span className="text-2xl font-bold text-muted-foreground">LINKS:</span>
-          </div>
-          <div className="flex space-x-3">
-            <SocialLink
-              href="https://github.com/xnithish"
-              icon="/brand_logos_mono/github.svg"
-              alt="GitHub"
-              label="github"
-            />
-            <SocialLink
-              href="https://www.linkedin.com/in/xnithish/"
-              icon="/brand_logos_mono/linkedin.svg"
-              alt="LinkedIn"
-              label="linkedin"
-            />
-            <SocialLink
-              href="https://x.com/xniithish"
-              icon="/brand_logos_mono/x.svg"
-              alt="X (Twitter)"
-              label="x"
-            />
-            <SocialLink
-              href="mailto:niiithish@example.com"
-              icon="/brand_logos_mono/gmail.svg"
-              alt="Gmail"
-              label="gmail"
-            />
-          </div>
-        </div> */}
-      </SidebarFooter>
+      {/* <SidebarFooter className="px-6 py-2 bg-[#080808]">
+      </SidebarFooter> */}
     </Sidebar>
   )
 }

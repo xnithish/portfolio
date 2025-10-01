@@ -1,5 +1,5 @@
 import { ProjectsList } from "@/components/projects-list"
-import { Cog, Code, Laptop } from "lucide-react"
+import { Cog, Laptop } from "lucide-react"
 
 export default function Home() {
   return (
