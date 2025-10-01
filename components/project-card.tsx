@@ -27,24 +27,41 @@ export function ProjectCard({ project }: { project: Project }) {
       {/* Lightbox Modal */}
       {isLightboxOpen && (
         <div
-          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4 md:p-8"
           onClick={() => setIsLightboxOpen(false)}
         >
+          {/* Close button - improved for mobile */}
           <button
-            onClick={() => setIsLightboxOpen(false)}
-            className="absolute top-4 right-4 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+            onClick={(e) => {
+              e.stopPropagation()
+              setIsLightboxOpen(false)
+            }}
+            className="absolute top-4 right-4 z-10 p-3 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full transition-all duration-200 touch-manipulation"
             aria-label="Close lightbox"
           >
-            <X className="h-6 w-6 text-white" />
+            <X className="h-6 w-6 md:h-7 md:w-7 text-white" />
           </button>
-          <div className="relative w-full h-full max-w-7xl max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
+
+          {/* Image container */}
+          <div
+            className="relative w-full h-full max-w-7xl max-h-[80vh] md:max-h-[90vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
             <Image
               src={project.images[0].src}
               alt={project.images[0].alt}
               fill
               className="object-contain"
               quality={100}
+              priority
             />
+          </div>
+
+          {/* Click away instruction */}
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+            <p className="text-white/60 text-xs md:text-sm bg-black/50 px-3 py-1 rounded-full">
+              Click anywhere to close
+            </p>
           </div>
         </div>
       )}
