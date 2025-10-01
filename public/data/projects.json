@@ -3,78 +3,51 @@
     "id": "nova-crm",
     "title": "Nova CRM",
     "description": "Plot complex, sparse datasets on date time, logarithmic or even entirely custom scales with ease.",
-    "techStack": ["Nextjs", "React.js", "Chart.Js", "Shadcn"],
+    "techStack": ["Nextjs", "React.js", "TailwindCSS", "Shadcn"],
     "features": [
-      "Plot complex, sparse datasets on date time, logarithmic or even entirely custom scales with ease.",
-      "Zoom, pan and even drag points around with just a few lines of code.",
-      "Choose from a variety of chart types including line, bar, radar, polar area"
+      "Developed a CRM interface with a clean dashboard to manage leads, clients, and sales workflows.",
+      "Designed intuitive, reusable UI components for a scalable and consistent user experience."
     ],
     "images": [
       {
         "src": "/project/novacrm/n1.webp",
         "alt": "Nova CRM Project Screenshot 1"
-      },
-      {
-        "src": "/project/novacrm/n2.webp",
-        "alt": "Nova CRM Project Screenshot 2"
-      },
-      {
-        "src": "/project/novacrm/n3.webp",
-        "alt": "Nova CRM Project Screenshot 3"
       }
     ],
     "visitUrl": "https://novaxcrm.vercel.app/"
   },
   {
-    "id": "portfolio-website",
-    "title": "Portfolio Website",
-    "description": "A modern, responsive portfolio website built with Next.js 15 and Tailwind CSS.",
-    "techStack": ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui"],
+    "id": "coinx",
+    "title": "CoinX",
+    "description": "Built a responsive crypto dashboard with live data, interactive charts, and a sleek modern UI.",
+    "techStack": ["Nextjs", "React.js", "TailwindCSS", "Shadcn"],
     "features": [
-      "Responsive design that works on all devices",
-      "Modern dark theme with smooth animations",
-      "Project showcase with interactive galleries"
+      "Built a responsive crypto dashboard with live data, interactive charts, and a sleek modern UI.",
+      "Integrated live coin prices and news for real-time market tracking."
     ],
     "images": [
       {
         "src": "/project/coinx/c1.webp",
         "alt": "Portfolio Website Screenshot 1"
-      },
-      {
-        "src": "/project/coinx/c2.webp",
-        "alt": "Portfolio Website Screenshot 2"
-      },
-      {
-        "src": "/project/coinx/c3.webp",
-        "alt": "Portfolio Website Screenshot 3"
       }
     ],
     "visitUrl": "https://coin-x1.vercel.app/"
   },
   {
-    "id": "example-project",
-    "title": "Example Project",
-    "description": "Another example project to demonstrate the component system.",
-    "techStack": ["React", "Node.js", "MongoDB", "Express"],
+    "id": "ironflex",
+    "title": "IronFlex",
+    "description": "A gym clothing brand website with product listings and a functional shopping cart.",
+    "techStack": ["React", "Nextjs", "TailwindCSS", "Zustand", "Shadcn"],
     "features": [
-      "Full-stack application with REST API",
-      "Database integration with MongoDB",
-      "User authentication and authorization"
+      "Built a gym clothing brand website with product listings and a functional shopping cart.",
+      "Designed responsive, reusable components for smooth navigation and optimized performance."
     ],
     "images": [
       {
         "src": "/project/ironflex/e1.webp",
         "alt": "Example Project Screenshot 1"
-      },
-      {
-        "src": "/project/ironflex/e2.webp",
-        "alt": "Example Project Screenshot 2"
-      },
-      {
-        "src": "/project/ironflex/e3.webp",
-        "alt": "Example Project Screenshot 3"
       }
     ],
-    "visitUrl": "https://novaxcrm.vercel.app/"
+    "visitUrl": "https://ironflex.vercel.app/"
   }
 ]

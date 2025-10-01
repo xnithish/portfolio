@@ -1,13 +1,12 @@
 "use client"
 
+import Image from "next/image"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import {
   Sidebar,
   SidebarContent,
-  SidebarFooter,
-  SidebarHeader,
-} from "@/components/ui/sidebar"
+  SidebarFooter} from "@/components/ui/sidebar"
 import { MessageCircle } from "lucide-react"
 
 interface SocialLinkProps {
@@ -26,7 +25,7 @@ function SocialLink({ href, icon, alt, label }: SocialLinkProps) {
         rel="noopener noreferrer"
         className="p-2 rounded-lg border border-border bg-background shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 ease-in-out cursor-pointer inline-block"
       >
-        <img src={icon} alt={alt} className="h-6 w-6" />
+        <Image src={icon} alt={alt} width={24} height={24} className="h-6 w-6" />
       </a>
       <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover/social:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
         {label}
@@ -43,9 +42,9 @@ export function AppSidebar() {
           <div className="flex items-center gap-3 pt-6">
           <Avatar className="h-8 w-8">
             <AvatarImage src="/avatar.jpg" alt="Jacob Treb" />
-            <AvatarFallback>JT</AvatarFallback>
+            <AvatarFallback>NG</AvatarFallback>
           </Avatar>
-          <span className="text-sm font-medium text-white">@Jacob_Treb</span>
+          <span className="text-sm font-medium text-white">@0xnithish</span>
         </div>
         <div className="space-y-2">
             <h1 className="text-2xl font-bold leading-tight text-white">
@@ -57,16 +56,34 @@ export function AppSidebar() {
           </div>
 
           <div className="flex gap-2">
-            <Button size="default" className="rounded-full text-sm">
-              Schedule Call
+            <Button
+              size="default"
+              className="rounded-full text-sm"
+              asChild
+            >
+              <a
+                href="https://calendly.com/0xnithish"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Schedule Call
+              </a>
             </Button>
             <Button
               size="default"
               variant="secondary"
               className="rounded-full gap-2 text-sm"
+              asChild
             >
-              <MessageCircle className="h-4 w-4" />
-              Chat
+              <a
+                href="https://x.com/0xnithish"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <MessageCircle className="h-4 w-4" />
+                Chat
+              </a>
             </Button>
           </div>
         </div>
@@ -94,7 +111,7 @@ export function AppSidebar() {
                         "CSS"].map((tech) => (
                     <span
                       key={tech}
-                      className="px-2 py-1 text-xs text-white bg-muted rounded-full hover:bg-muted/80 transition-all">
+                      className="px-2 py-1 text-xs text-gray-400 bg-[rgba(29,29,29,0.46)] rounded-full hover:bg-muted/80 transition-all">
                       {tech}
                     </span>
                     ))}
@@ -106,7 +123,7 @@ export function AppSidebar() {
                     {["npm", "pnpm", "Node.js", "Express.js(Learning)"].map((tech) => (
                     <span
                       key={tech}
-                      className="px-2 py-1 text-xs text-white bg-muted rounded-full hover:bg-muted/80 transition-all"
+                      className="px-2 py-1 text-xs text-gray-400 bg-[rgba(29,29,29,0.46)] rounded-full hover:bg-muted/80 transition-all"
                     >
                       {tech}
                     </span>
@@ -119,7 +136,7 @@ export function AppSidebar() {
                     {["Supabase", "Clerk Auth", "Better Auth"].map((tech) => (
                     <span
                       key={tech}
-                      className="px-2 py-1 text-xs text-white bg-muted rounded-full hover:bg-muted/80 transition-all"
+                      className="px-2 py-1 text-xs text-gray-400 bg-[rgba(29,29,29,0.46)] rounded-full hover:bg-muted/80 transition-all"
                     >
                       {tech}
                     </span>
@@ -150,7 +167,7 @@ export function AppSidebar() {
               label="linkedin"
             />
             <SocialLink
-              href="https://x.com/xniithish"
+              href="https://x.com/0xnithish"
               icon="/brand_logos_mono/x.svg"
               alt="X (Twitter)"
               label="x"
