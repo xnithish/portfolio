@@ -169,7 +169,7 @@ export function MobileHeader() {
             label="x"
           />
           <SocialLink
-            href="mailto:niiithish@example.com"
+            href="mailto:niiithish@gmail.com"
             icon="/brand_logos_mono/gmail.svg"
             alt="Gmail"
             label="gmail"
