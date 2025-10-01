@@ -56,13 +56,6 @@ export function ProjectCard({ project }: { project: Project }) {
               priority
             />
           </div>
-
-          {/* Click away instruction - outside image container */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-            <p className="text-white/60 text-xs md:text-sm bg-black/50 px-4 py-2 rounded-full backdrop-blur-sm">
-              Click anywhere outside image to close
-            </p>
-          </div>
         </div>
       )}
 
